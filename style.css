@@ -54,6 +54,10 @@ body, html{
   font-size: 4em;
 }
 
+.fs-xs{
+    font-size: .75em;
+}
+
 .red{
   color: #e52a3d;
 }
