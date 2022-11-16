@@ -47,7 +47,7 @@ body, html{
 }
 
 .bg-light-color{
-  background: #6c757d;
+  background: #fcfcfc;
 }
 
 .fs-xl{
@@ -76,11 +76,11 @@ body, html{
 }
 
 .bg-kaya-dark{
-  background-color: #243B4D !important;
+  background-color: #333333 !important;
 }
 
 .text-kaya-dark{
-  color: #243B4D !important;
+  color: #333333 !important;
 }
 
 .bg-kaya-red{
@@ -91,12 +91,12 @@ body, html{
   color: #e52a3d !important;
 }
 
-.bg-kaya-haki{
-  background-color: #D0DECB !important;
+.bg-kaya-light{
+  background-color: #fcfcfc !important;
 }
 
-.text-kaya-haki{
-  color: #D0DECB !important;
+.text-kaya-light{
+  color: #fcfcfc !important;
 
 }
 
@@ -288,13 +288,13 @@ span.freelancer-main-details {
 
 }
 
-.btn-haki {
+.btn-light {
     font-family: 'Roboto', sans-serif;
     font-size: 18px !important;
     line-height: 20px;
     font-weight: 500;
     color: #fff;
-    background-color: #D0DECB;
+    background-color: #fcfcfc;
     border: 2px solid #243B4D;
     box-shadow: 0px 5px 20px 0 rgb(0 0 0 / 27%);
     text-shadow: 1px 1px 1px rgb(0 0 0 / 25%);
@@ -308,7 +308,7 @@ span.freelancer-main-details {
     -webkit-transition: all 0.4s ease-in-out;
 }
 
-.btn-haki:hover{
+.btn-light:hover{
   background-color: #243B4D;
   color: #D0DECB !important;
   border: 2px solid #D0DECB;
