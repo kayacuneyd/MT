@@ -3,11 +3,15 @@
 
 }
 
-@font-face { font-family: AnandaBlack; src: url('../fonts/AnandaBlack.ttf'); }
+
+@font-face { font-family: ShadedLarch; src: url('../fonts/ShadedLarch.ttf'); }
+@font-face { font-family: LTFunk; src: url('../fonts/LTFunk.otf'); }
+
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.2;
+  font-family: ShadedLarch;
+    line-height: 1.2em;
+    letter-spacing: 1.5px;
     margin-top: 0;
     margin-bottom: 20px;
     color: #EEEEE6;
@@ -17,27 +21,25 @@ h1, h2, h3, h4, h5, h6 {
 a, a:hover, a:focus, a:active, a:visited {
     text-decoration: none;
     outline: 0;
+    font-family: 'Zilla Slab', serif;
+
 }
 
 
 
 p{
-   font-size: 1em;
+   font-size: 1.25em;
    line-height: 1.25em;
    font-weight: 400;
    color: #EEEEE6;
    margin-bottom: 20px;
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Zilla Slab', serif;
 }
 
 body, html{
   margin: 0;
   padding: 0;
-  font-family: -apple-system,BlinkMacSystemFont,
-               "Segoe UI",Roboto,
-               "Helvetica Neue",Arial,sans-serif,
-               "Apple Color Emoji","Segoe UI Emoji",
-               "Segoe UI Symbol","Noto Color Emoji";
+  font-family: 'Zilla Slab', serif;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.5;
@@ -71,6 +73,10 @@ body, html{
   width: 100%;
 }
 
+.w-50{
+  width: 50%;
+}
+
 .fs-0{
   font-size: 4rem;
 }
@@ -101,7 +107,7 @@ body, html{
 }
 
 .contact-text{
-  font-family: AnandaBlack;
+  font-family: ShadedLarch;
   font-size: 3em;
 
   animation: wobble; /* referring directly to the animation's @keyframe declaration */
@@ -130,10 +136,10 @@ body, html{
 /* Hero Section*/
 .hero{
   position: relative;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
-  /*background: url("../img/bg-dark-ck-portf.png") top center no-repeat;*/
+  /*background: url("../img/mt-hero-bg.jpg") center center no-repeat;*/
   background-size: cover;
   z-index: 999;
 }
@@ -158,6 +164,17 @@ body, html{
 
 .hero-img-wrapper > img{
   width: 350px;
+}
+
+.hero-text-wrapper > h2{
+  background-color: rgb(51,51,51, .65);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+}
+
+.hero-img{
+  width: 180px;
+  height: auto;
 }
 
 /*Logo*/
@@ -237,7 +254,12 @@ img {
 }
 
 .left-image {
-
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .about{
@@ -487,9 +509,11 @@ a.nav-link.active{
 
 /*Second Contact Form*/
 .contact{
-  background-image: url("https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  /*background-image: url("https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");*/
   padding: 90px 0;
 }
+
+
 
 .contact-text-wrapper{
   width: 40vw;
@@ -509,6 +533,7 @@ a.nav-link.active{
   background-color: #ffffff;
   border-radius: 12px;
   width: 40vw;
+  border: 1px solid black;
 }
 
 .contact-form textarea {
